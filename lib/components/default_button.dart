@@ -15,21 +15,26 @@ class DefaultButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return Container(
       padding: EdgeInsets.symmetric(
         vertical: kDefaultPadding,
         horizontal: kDefaultPadding * 2.5,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-      color: Colors.amber,
-      // Color(0xFFE8F0F9),
-      onPressed: press,
-      child: Row(
-        children: [
-          Image.asset(imageSrc, height: 40),
-          SizedBox(width: kDefaultPadding),
-          Text(text),
-        ],
+      color: Color(0xFFE8F0F9),
+      child: ElevatedButton(
+        //  style: ButtonStyle(padding:EdgeInsets.only()),
+
+        // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        // color: Colors.amber,
+
+        onPressed: press,
+        child: Row(
+          children: [
+            Image.asset(imageSrc, height: 40),
+            SizedBox(width: kDefaultPadding),
+            Text(text),
+          ],
+        ),
       ),
     );
   }

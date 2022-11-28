@@ -17,10 +17,10 @@ class HomeScreen extends StatelessWidget {
           children: [
             TopSection(),
             SizedBox(height: kDefaultPadding * 2),
-            AboutSection(),
+            // AboutSection(),
             ServiceSection(),
-            //  RecentWorkSection(),
-            // FeedbackSection(),
+            RecentWorkSection(),
+            FeedbackSection(),
             SizedBox(height: kDefaultPadding),
             ContactSection(),
             // This SizeBox just for demo
